@@ -17,7 +17,6 @@ namespace clickerGame
         /// </summary>
         public const int RESIZE_ZONE_SIZE = 15;
 
-        public const int SHOP_BLOCK_MARGIN = 20;
 
         /// <summary>
         /// Le style de bordure par défaut pour les fenêtres a taille fixe
@@ -63,12 +62,19 @@ namespace clickerGame
         public const int GPS_BASE_PRICE = 10;
         public const double GPS_PRICE_MULT = 1.15;
         public const double GPS_VAL_MULT = 1.25;
-        public static readonly Size SHOP_ITEM_SIZE = new Size(300, 300);
+
         public static readonly Color TOGGLED_BUTTON_DEFAULT_BACKGROUND = Color.Red;
         public static readonly Color TOGGLED_BUTTON_DEFAULT_FORE = Color.Black;
         public static readonly Color UNTOGGLED_BUTTON_DEFAULT_BACKGROUND = Color.DarkCyan;
         public static readonly Color UNTOGGLED_BUTTON_DEFAULT_FORE = Color.White;
-        public static readonly Font SHOP_DEFAULT_FONT = new Font("Lucida Bright", 10.5f);
+
+        public static readonly Size SHOP_ITEM_SIZE = new Size(350, 125);
+        public const int SHOP_BLOCK_MARGIN = 20;
+        public const int SHOP_TITLE_WIDTH = 80;
+        public const int SHOP_DESC_WIDTH = 150;
+        public static readonly Font SHOP_TITLE_FONT = new Font("Lucida Bright", 11.25f, FontStyle.Bold);
+        public static readonly Font SHOP_SMALL_FONT = new Font("Lucida Bright", 8f, FontStyle.Bold);
+
         public static readonly int[] DEFAULT_BONUS_THRESHOLDS = 
         {
             10,

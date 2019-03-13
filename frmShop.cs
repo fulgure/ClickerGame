@@ -21,8 +21,27 @@ namespace clickerGame
         {
             foreach (Item categories in Shop.UnlockedInventory)
             {
-                Point descLabelPos = new Point(Const.SHOP_BLOCK_MARGIN, Const.SHOP_BLOCK_MARGIN);
-                Label descLabel = createLabel(categories.Nom, categories.Description, descLabelPos);
+                Point titleLabelPos = new Point(0, Const.SHOP_BLOCK_MARGIN);
+                int lblHeight = Const.SHOP_ITEM_SIZE.Height - Const.SHOP_BLOCK_MARGIN;
+                Label titleLabel = new Label() {
+                    Tag = categories.Nom,
+                    Text = categories.Description,
+                    Location = titleLabelPos,
+                    Font = Const.SHOP_SMALL_FONT,
+                    AutoSize = true,
+                    Size = new Size(Const.SHOP_TITLE_WIDTH, Const.SHOP_ITEM_SIZE.Height - Const.SHOP_BLOCK_MARGIN),
+                    Name = categories.Nom
+                };
+                Point descLabelPos = titleLabel.Location + new Size(titleLabel.Width, 0);
+                Label descLabel = new Label()
+                {
+                    Tag = categories.Description,
+                    Text = categories.Description,
+                    Location = descLabelPos,
+                    Font = Const.SHOP_TITLE_FONT,
+                    AutoSize = true,
+                    Size = new Size(Const.SHOP_DESC_WIDTH, lblHeight)
+                };
                 Button buyButton = new Button()
                 {
                     Text = "Acheter",
@@ -31,15 +50,6 @@ namespace clickerGame
             }
         }
         
-        private Label createLabel(string name, string text, Point position)
-        {
-            return new Label()
-            {
-                Text = text,
-                Location = position,
-                Font = Const.SHOP_DEFAULT_FONT
-            };
-        }
 
         /// <summary>
         /// Cache la fenêtre lors d'un alt-tab

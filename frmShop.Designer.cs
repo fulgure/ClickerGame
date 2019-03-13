@@ -38,7 +38,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 8.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label1.Location = new System.Drawing.Point(232, 60);
+            this.label1.Location = new System.Drawing.Point(230, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 15);
             this.label1.TabIndex = 0;
@@ -49,11 +49,11 @@
             // 
             this.label2.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Location = new System.Drawing.Point(0, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 80);
+            this.label2.Size = new System.Drawing.Size(80, 68);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Item au nom très très long";
+            this.label2.Text = "Item au nom très très long fwa w fwaaf wfff";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
@@ -69,9 +69,9 @@
             // 
             this.label3.Font = new System.Drawing.Font("Lucida Bright", 8F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Location = new System.Drawing.Point(80, 0);
+            this.label3.Location = new System.Drawing.Point(80, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 80);
+            this.label3.Size = new System.Drawing.Size(150, 68);
             this.label3.TabIndex = 3;
             this.label3.Text = "dsa gf df th re ew v b vs ds ds gw we ew dfg xcv q wrq wt twea v vas  er w g a d " +
     "sva  be r eb";
