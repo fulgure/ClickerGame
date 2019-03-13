@@ -18,6 +18,7 @@ namespace clickerGame
         public static frmBonus BonusForm;
         public static frmQuantity QuantityForm;
         public static frmModularUI ModularForm;
+        public static frmShop ShopForm;
         private static List<Form> childForms = new List<Form>();
         private static bool _isSticky = true;
 
@@ -50,6 +51,7 @@ namespace clickerGame
             BonusForm.Location = ClickForm.Bounds.GetPoint(Corners.TopLeft) - new Size(0, BonusForm.Height);
             QuantityForm.Location = BonusForm.Bounds.GetPoint(Corners.TopLeft) - new Size(QuantityForm.Width, 0);
             ModularForm.Location = BonusForm.Bounds.GetPoint(Corners.TopRight);
+            ShopForm.Location = QuantityForm.Bounds.GetPoint(Corners.BottomLeft);
         }
 
         /// <summary>
@@ -112,8 +114,14 @@ namespace clickerGame
                 Width = Const.MEDIUM_WINDOW_WIDTH,
                 Height = Const.BIG_WINDOW_HEIGHT
             };
+            ShopForm = new frmShop()
+            {
+                Text = "Shop",
+                Width = Const.MEDIUM_WINDOW_WIDTH,
+                Height = Const.MEDIUM_WINDOW_HEIGHT
+            };
             ClickForm.Width = Const.MEDIUM_WINDOW_WIDTH;
-
+            ClickForm.Height = Const.MEDIUM_WINDOW_HEIGHT;
             ClickForm.Move += Forms_Move;
 
             ClickForm.Text = "rsclient";
@@ -129,6 +137,7 @@ namespace clickerGame
             BonusForm.Show();
             QuantityForm.Show();
             ModularForm.Show();
+            ShopForm.Show();
 
             childForms = new List<Form>()
             {
@@ -139,7 +148,8 @@ namespace clickerGame
                 TotalGPSForm,
                 BonusForm,
                 QuantityForm,
-                ModularForm
+                ModularForm,
+                ShopForm
             };
         }
 

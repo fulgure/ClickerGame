@@ -35,7 +35,7 @@
             // 
             this.btnIncrement.Location = new System.Drawing.Point(11, 12);
             this.btnIncrement.Name = "btnIncrement";
-            this.btnIncrement.Size = new System.Drawing.Size(312, 137);
+            this.btnIncrement.Size = new System.Drawing.Size(311, 187);
             this.btnIncrement.TabIndex = 0;
             this.btnIncrement.Text = "Click";
             this.btnIncrement.UseVisualStyleBackColor = true;
@@ -45,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 161);
+            this.ClientSize = new System.Drawing.Size(334, 211);
             this.Controls.Add(this.btnIncrement);
             this.MaximizeBox = false;
             this.Name = "frmClick";

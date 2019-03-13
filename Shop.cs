@@ -22,7 +22,8 @@ namespace clickerGame
 
         public static void Initialize(Item[] upgrades)
         {
-            Initialize(new Queue<Item>(upgrades));
+            if(upgrades != null)
+                Initialize(new Queue<Item>(upgrades));
         }
 
         public static List<Upgrade> GetUnlockedUpgrades()

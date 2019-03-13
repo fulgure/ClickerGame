@@ -22,7 +22,7 @@ namespace clickerGame
             foreach (Item categories in Shop.UnlockedInventory)
             {
                 Point descLabelPos = new Point(Const.SHOP_BLOCK_MARGIN, Const.SHOP_BLOCK_MARGIN);
-                Label descLabel = createLabel(categories.Description, descLabelPos);
+                Label descLabel = createLabel(categories.Nom, categories.Description, descLabelPos);
                 Button buyButton = new Button()
                 {
                     Text = "Acheter",
@@ -31,11 +31,11 @@ namespace clickerGame
             }
         }
         
-        private Label createLabel(string description, Point position)
+        private Label createLabel(string name, string text, Point position)
         {
             return new Label()
             {
-                Text = description,
+                Text = text,
                 Location = position,
                 Font = Const.SHOP_DEFAULT_FONT
             };

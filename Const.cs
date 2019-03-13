@@ -32,11 +32,12 @@ namespace clickerGame
         public const int DESIRED_BUFFER_TIME = 2500;
         public const int TICK_COUNT_FOR_GPS = DESIRED_BUFFER_TIME / TICK_INTERVAL;
 
-        public const int BIG_WINDOW_HEIGHT = MEDIUM_WINDOW_HEIGHT + SMALL_WINDOW_HEIGHT;
-        public const int MEDIUM_WINDOW_WIDTH = 350;
-        public const int MEDIUM_WINDOW_HEIGHT = 200;
-        public const int SMALL_WINDOW_WIDTH = MEDIUM_WINDOW_WIDTH / 2;
+        public const int SMALL_WINDOW_WIDTH = 175;
         public const int SMALL_WINDOW_HEIGHT = 125;
+        public const int MEDIUM_WINDOW_WIDTH = SMALL_WINDOW_WIDTH * 2;
+        public const int MEDIUM_WINDOW_HEIGHT = SMALL_WINDOW_HEIGHT * 2;
+        public const int BIG_WINDOW_WIDTH = MEDIUM_WINDOW_WIDTH + SMALL_WINDOW_WIDTH;
+        public const int BIG_WINDOW_HEIGHT = MEDIUM_WINDOW_HEIGHT + SMALL_WINDOW_HEIGHT;
 
         public const int STARTING_GOLD = 0;
         public const int STARTING_GPC = 1;
@@ -62,7 +63,7 @@ namespace clickerGame
         public const int GPS_BASE_PRICE = 10;
         public const double GPS_PRICE_MULT = 1.15;
         public const double GPS_VAL_MULT = 1.25;
-
+        public static readonly Size SHOP_ITEM_SIZE = new Size(300, 300);
         public static readonly Color TOGGLED_BUTTON_DEFAULT_BACKGROUND = Color.Red;
         public static readonly Color TOGGLED_BUTTON_DEFAULT_FORE = Color.Black;
         public static readonly Color UNTOGGLED_BUTTON_DEFAULT_BACKGROUND = Color.DarkCyan;
