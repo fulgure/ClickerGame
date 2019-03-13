@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{061F9042-3DAD-4DC3-917F-86D6ED6993B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>clickerGame</RootNamespace>
+    <AssemblyName>clickerGame</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Const.cs" />
+    <Compile Include="CustomBtnGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomBtnGrid.Designer.cs">
+      <DependentUpon>CustomBtnGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Forms.cs" />
+    <Compile Include="frmBonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBonus.Designer.cs">
+      <DependentUpon>frmBonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClick.Designer.cs">
+      <DependentUpon>frmClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGold.Designer.cs">
+      <DependentUpon>frmGold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGPC.Designer.cs">
+      <DependentUpon>frmGPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGPS.Designer.cs">
+      <DependentUpon>frmGPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModularUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModularUI.Designer.cs">
+      <DependentUpon>frmModularUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassive.Designer.cs">
+      <DependentUpon>frmPassive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuantity.Designer.cs">
+      <DependentUpon>frmQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShop.Designer.cs">
+      <DependentUpon>frmShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shop.cs" />
+    <Compile Include="smallWindowTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="smallWindowTemplate.Designer.cs">
+      <DependentUpon>smallWindowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="Upgrade.cs" />
+    <EmbeddedResource Include="CustomBtnGrid.resx">
+      <DependentUpon>CustomBtnGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBonus.resx">
+      <DependentUpon>frmBonus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClick.resx">
+      <DependentUpon>frmClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGold.resx">
+      <DependentUpon>frmGold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGPC.resx">
+      <DependentUpon>frmGPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGPS.resx">
+      <DependentUpon>frmGPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModularUI.resx">
+      <DependentUpon>frmModularUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassive.resx">
+      <DependentUpon>frmPassive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuantity.resx">
+      <DependentUpon>frmQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShop.resx">
+      <DependentUpon>frmShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="smallWindowTemplate.resx">
+      <DependentUpon>smallWindowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
